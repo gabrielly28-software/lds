@@ -1,180 +1,229 @@
-<header>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lei da Suposição - Programação</title>
+    <style>
+        /* Paleta de Cores e Definições Gerais */
+        :root {
+            --vermelho-escuro: #6B1D2F; /* Cor principal/Borgonha */
+            --vermelho-hover: #4A121E;  /* Detalhes de interação */
+            --bege-fundo: #F9F6F0;      /* Fundo suave off-white */
+            --bege-card: #FFFFFF;       /* Fundo dos cartões */
+            --texto-escuro: #2D2525;   /* Texto legível */
+            --texto-claro: #FFFFFF;    /* Texto sobre vermelho */
+            --borda: #E6DFD3;           /* Divisores sutis */
+        }
 
-    <h3>PROGRAMAÇÃO</h3>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bege-fundo);
+            color: var(--texto-escuro);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    <h1>Lei da Suposição</h1>
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            width: 100%;
+            max-width: 600px;
+        }
 
-    <p>seus pensamentos criam sua realidade ❤️</p>
+        header h3 {
+            color: var(--vermelho-escuro);
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
 
-</header>
+        header h1 {
+            color: var(--vermelho-escuro);
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+        }
 
-<div class="subtitulo">
+        header p {
+            font-style: italic;
+            color: #666;
+            margin: 0;
+        }
 
-    conteúdo que inspira, transforma e fortalece ♡
+        .subtitulo {
+            font-size: 1.1rem;
+            color: var(--vermelho-escuro);
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+        }
 
-</div>
-<div class="card">
+        /* Estrutura dos Cards */
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
 
-    <div class="dia">
+        .card {
+            background-color: var(--bege-card);
+            border: 1px solid var(--borda);
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
 
-        POST 1
+        .dia {
+            background-color: var(--vermelho-escuro);
+            color: var(--texto-claro);
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
 
-        <span>❤️</span>
+        .conteudo {
+            padding: 20px;
+        }
 
+        .categoria {
+            display: inline-block;
+            color: var(--vermelho-escuro);
+            font-size: 0.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--vermelho-escuro);
+            padding-bottom: 2px;
+        }
+
+        .conteudo p {
+            margin: 0 0 20px 0;
+            line-height: 1.6;
+            color: var(--texto-escuro);
+        }
+
+        /* Botões de Interação */
+        .interacao {
+            display: flex;
+            gap: 15px;
+            border-top: 1px solid var(--borda);
+            padding-top: 15px;
+        }
+
+        .btn-interacao {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #777;
+            transition: all 0.2s ease;
+        }
+
+        .btn-interacao:hover {
+            background-color: #F0EAE1;
+            color: var(--vermelho-escuro);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h3>Programação</h3>
+        <h1>Lei da Suposição</h1>
+        <p>Seus pensamentos criam sua realidade</p>
+    </header>
+
+    <div class="subtitulo">
+        conteúdo que inspira, transforma e fortalece
     </div>
 
-    <div class="conteudo">
-
-        <span class="categoria">
-
-            O QUE É?
-
-        </span>
-
-        <p>
-
-            A lei da suposição afirma que aquilo que você assume como verdadeiro tende a se refletir na sua realidade. Seus pensamentos, sentimentos e crenças influenciam a forma como você percebe e vive o mundo.
-
-        </p>
-
-        <div class="interacao">
-
-            ❤️ 💬 🔁 ⭐
-
+    <div class="container">
+        <!-- POST 1 -->
+        <div class="card">
+            <div class="dia">POST 1</div>
+            <div class="conteudo">
+                <span class="categoria">O QUE É?</span>
+                <p>A lei da suposição afirma que aquilo que você assume como verdadeiro tende a se refletir na sua realidade. Seus pensamentos, sentimentos e crenças influenciam a forma como você percebe e vive o mundo.</p>
+                <div class="interacao">
+                    <button class="btn-interacao">Curtir</button>
+                    <button class="btn-interacao">Comentar</button>
+                    <button class="btn-interacao">Compartilhar</button>
+                    <button class="btn-interacao">Salvar</button>
+                </div>
+            </div>
         </div>
 
-    </div>
-
-</div>
-<div class="card">
-
-    <div class="dia">
-
-        POST 2
-
-        <span>❤️</span>
-
-    </div>
-
-    <div class="conteudo">
-
-        <span class="categoria">
-
-            QUEM CRIOU?
-
-        </span>
-
-        <p>
-
-            O principal responsável pela popularização da lei da suposição foi Neville Goddard. Ele ensinava que a imaginação é uma ferramenta poderosa e que as nossas crenças moldam a nossa experiência.
-
-        </p>
-
-        <div class="interacao">
-
-            ❤️ 💬 🔁 ⭐
-
+        <!-- POST 2 -->
+        <div class="card">
+            <div class="dia">POST 2</div>
+            <div class="conteudo">
+                <span class="categoria">QUEM CRIOU?</span>
+                <p>O principal responsável pela popularização da lei da suposição foi Neville Goddard. Ele ensinava que a imaginação é uma ferramenta poderosa e que as nossas crenças moldam a nossa experiência.</p>
+                <div class="interacao">
+                    <button class="btn-interacao">Curtir</button>
+                    <button class="btn-interacao">Comentar</button>
+                    <button class="btn-interacao">Compartilhar</button>
+                    <button class="btn-interacao">Salvar</button>
+                </div>
+            </div>
         </div>
 
-    </div>
-
-</div>
-<div class="card">
-
-    <div class="dia">
-
-        POST 3
-
-        <span>❤️</span>
-
-    </div>
-
-    <div class="conteudo">
-
-        <span class="categoria">
-
-            AFIRMAÇÕES
-
-        </span>
-
-        <p>
-
-            As afirmações são frases repetidas com intenção. Elas podem ajudar a fortalecer pensamentos positivos e incentivar mudanças na maneira como você se percebe.
-
-        </p>
-
-        <div class="interacao">
-
-            ❤️ 💬 🔁 ⭐
-
+        <!-- POST 3 -->
+        <div class="card">
+            <div class="dia">POST 3</div>
+            <div class="conteudo">
+                <span class="categoria">AFIRMAÇÕES</span>
+                <p>As afirmações são frases repetidas com intenção. Elas podem ajudar a fortalecer pensamentos positivos e incentivar mudanças na maneira como você se percebe.</p>
+                <div class="interacao">
+                    <button class="btn-interacao">Curtir</button>
+                    <button class="btn-interacao">Comentar</button>
+                    <button class="btn-interacao">Compartilhar</button>
+                    <button class="btn-interacao">Salvar</button>
+                </div>
+            </div>
         </div>
 
-    </div>
-
-</div>
-<div class="card">
-
-    <div class="dia">
-
-        POST 4
-
-        <span>❤️</span>
-
-    </div>
-
-    <div class="conteudo">
-
-        <span class="categoria">
-
-            IMAGINAÇÃO
-
-        </span>
-
-        <p>
-
-            Neville Goddard acreditava que a imaginação era uma das maiores ferramentas do ser humano. Visualizar objetivos e pensar em possibilidades pode influenciar a motivação e o comportamento.
-
-        </p>
-
-        <div class="interacao">
-
-            ❤️ 💬 🔁 ⭐
-
+        <!-- POST 4 -->
+        <div class="card">
+            <div class="dia">POST 4</div>
+            <div class="conteudo">
+                <span class="categoria">IMAGINAÇÃO</span>
+                <p>Neville Goddard acreditava que a imaginação era uma das maiores ferramentas do ser humano. Visualizar objetivos e pensar em possibilidades pode influenciar a motivação e o comportamento.</p>
+                <div class="interacao">
+                    <button class="btn-interacao">Curtir</button>
+                    <button class="btn-interacao">Comentar</button>
+                    <button class="btn-interacao">Compartilhar</button>
+                    <button class="btn-interacao">Salvar</button>
+                </div>
+            </div>
         </div>
 
-    </div>
-
-</div>
-<div class="card">
-
-    <div class="dia">
-
-        POST 5
-
-        <span>❤️</span>
-
-    </div>
-
-    <div class="conteudo">
-
-        <span class="categoria">
-
-            REFLEXÃO
-
-        </span>
-
-        <p>
-
-            "Cuide dos seus pensamentos, porque eles influenciam a maneira como você enxerga o mundo e constroem a história que você conta para si mesma."
-
-        </p>
-
-        <div class="interacao">
-
-            ❤️ 💬 🔁 ⭐
-
+        <!-- POST 5 -->
+        <div class="card">
+            <div class="dia">POST 5</div>
+            <div class="conteudo">
+                <span class="categoria">REFLEXÃO</span>
+                <p>"Cuide dos seus pensamentos, porque eles influenciam a maneira como você enxerga o mundo e constroem a história que você conta para si mesma."</p>
+                <div class="interacao">
+                    <button class="btn-interacao">Curtir</button>
+                    <button class="btn-interacao">Comentar</button>
+                    <button class="btn-interacao">Compartilhar</button>
+                    <button class="btn-interacao">Salvar</button>
+                </div>
+            </div>
         </div>
-
     </div>
 
-</div>
+</body>
+</html>
